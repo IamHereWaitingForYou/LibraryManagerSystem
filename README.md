@@ -23,3 +23,14 @@
 ---- | -----  
 ![image](https://github.com/giraffecode9668/LibraryManagerSystem/blob/master/Image_Readme/03.png) | ![image](https://github.com/giraffecode9668/LibraryManagerSystem/blob/master/Image_Readme/04.png)
 ![image](https://github.com/giraffecode9668/LibraryManagerSystem/blob/master/Image_Readme/05.png) | 
+
+## 测试用账号密码
+* 账号：201725040118
+* 密码：123456（普通用户）
+
+* 账号：2017250401181
+* 密码：111111（图书管理员）
+
+* 账号：2017250401180
+* 密码：000000（系统管理员）
+
