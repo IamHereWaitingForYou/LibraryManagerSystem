@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0"
+	prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.LoginController">
+	<children>
+		<ImageView fitHeight="500.0" fitWidth="750.0" opacity="0.6">
+			<image>
+				<Image url="@bld069474.jpg" />
+			</image>
+		</ImageView>
+		<Text fill="#0a0a0a" layoutX="-182.0" layoutY="117.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" styleClass="welcome-text" text="图书管理系统"
+			textAlignment="CENTER" wrappingWidth="750.0">
+			<font>
+				<Font size="36.0" />
+			</font>
+		</Text>
+		<Text fill="#212122" layoutX="80.0" layoutY="268.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="账号">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<Text fill="#2a2b2c" layoutX="80.0" layoutY="321.0" strokeType="OUTSIDE"
+			strokeWidth="0.0" text="密码">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Text>
+		<HBox layoutX="80.0" layoutY="208.0" prefHeight="24.0" prefWidth="352.0"
+			spacing="15.0">
+			<children>
+				<RadioButton fx:id="readerRbtn" layoutX="274.0" layoutY="212.0"
+					mnemonicParsing="false" selected="true" styleClass="h2" text="读者"
+					textFill="#242425">
+					<toggleGroup>
+						<ToggleGroup fx:id="genre" />
+					</toggleGroup>
+				</RadioButton>
+				<RadioButton fx:id="bookmanagerRbtn" layoutX="342.0"
+					layoutY="212.0" mnemonicParsing="false" styleClass="h2"
+					stylesheets="@Library.css" text="图书管理员" textFill="#171717"
+					toggleGroup="$genre" />
+				<RadioButton fx:id="systemmanagerRbtn" layoutX="443.0"
+					layoutY="212.0" mnemonicParsing="false" stylesheets="@Library.css"
+					text="系统管理员" textFill="#1e1e1e" toggleGroup="$genre" />
+			</children>
+		</HBox>
+		<TextField fx:id="accountField" layoutX="141.0" layoutY="240.0"
+			prefHeight="41.0" prefWidth="194.0" promptText="学号" stylesheets="@Library.css" />
+		<PasswordField fx:id="passwordField" layoutX="141.0"
+			layoutY="301.0" prefHeight="41.0" prefWidth="194.0" promptText="默认密码为身份证后6位" />
+		<CheckBox fx:id="savePassword" layoutX="97.0" layoutY="366.0"
+			mnemonicParsing="false" text="记住密码" textFill="#323232">
+			<font>
+				<Font size="21.0" />
+			</font>
+		</CheckBox>
+		<Button fx:id="login" layoutX="359.0" layoutY="304.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0"
+			styleClass="button-bright" stylesheets="@Library.css" text="登录" />
+		<Label fx:id="forget" layoutX="290.0" layoutY="359.0"
+			prefHeight="36.0" prefWidth="75.0" textFill="#212121">
+			<font>
+				<Font size="1.0" />
+			</font>
+		</Label>
+		<Label layoutX="90.0" layoutY="126.0" styleClass="welcome-text"
+			stylesheets="@Library.css" text="Library Management System">
+			<font>
+				<Font size="21.0" />
+			</font>
+		</Label>
+		<Label fx:id="forget" layoutX="283.0" layoutY="367.0" text="忘记密码？"
+			textFill="#242524" wrapText="true">
+			<font>
+				<Font size="21.0" />
+			</font>
+		</Label>
+	</children>
+	<styleClass>
+		<String fx:value="background" />
+		<String fx:value="background" />
+	</styleClass>
+</AnchorPane>

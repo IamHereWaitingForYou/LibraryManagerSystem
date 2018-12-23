@@ -1,0 +1,10 @@
+
+.button:hover1{
+   -fx-cursor: hand;
+}
+ 
+.button1{
+	-fx-background-color: linear-gradient(to bottom,#7dc2fe,#004883);
+    -fx-text-alignment: center;
+	-fx-text-fill: #fff;
+}

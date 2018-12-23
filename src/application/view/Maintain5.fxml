@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.Maintain5Controlle">
+	<children>
+		<ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.6"
+			pickOnBounds="true">
+			<image>
+				<Image url="@bld069474.jpg" />
+			</image>
+		</ImageView>
+		<GridPane layoutX="49.0" layoutY="80.0" prefHeight="184.0"
+			prefWidth="503.0" vgap="15.0">
+			<children>
+				<Label text="用户账号" />
+				<TextField fx:id="userAccount" prefHeight="36.0"
+					prefWidth="177.0" GridPane.columnIndex="1" />
+				<TextField fx:id="userType" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="4" />
+				<Label text="用户姓名" GridPane.rowIndex="1" />
+				<TextField fx:id="userName" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<Label text="身份证号" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+				<TextField fx:id="userId" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="4" GridPane.rowIndex="1" />
+				<Label text="用户性别" GridPane.rowIndex="2" />
+				<TextField fx:id="userSex" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<Label text="电话号码" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+				<TextField fx:id="phoneNumber" prefHeight="36.0"
+					prefWidth="177.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+				<Label text="用户类别" GridPane.columnIndex="3" />
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+					prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0"
+					minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="47.0"
+					minWidth="10.0" prefWidth="40.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+					prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"
+					prefWidth="150.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+			</rowConstraints>
+		</GridPane>
+		<HBox layoutX="181.0" layoutY="320.0" spacing="40.0">
+			<children>
+				<Button fx:id="affirmBtn" layoutX="477.0" layoutY="346.0"
+					mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" text="确认" />
+				<Button fx:id="cancelBtn" layoutX="545.0" layoutY="346.0"
+					mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" text="取消" />
+			</children>
+		</HBox>
+	</children>
+</AnchorPane>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+	prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="application.view.Maintain2Controller">
+	<children>
+		<ImageView fitHeight="400.0" fitWidth="600.0" opacity="0.55">
+			<image>
+				<Image url="@bld069474.jpg" />
+			</image>
+		</ImageView>
+		<GridPane layoutX="36.0" layoutY="80.0" prefHeight="209.0"
+			prefWidth="542.0" vgap="15.0">
+			<children>
+				<Label text="用户账号">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+				<TextField fx:id="userAccount" prefHeight="36.0"
+					prefWidth="177.0" GridPane.columnIndex="1" />
+				<TextField fx:id="userType" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="4" />
+				<Label text="用户姓名" GridPane.rowIndex="1">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+				<TextField fx:id="userName" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="1" GridPane.rowIndex="1" />
+				<Label text="身份证号" GridPane.columnIndex="3" GridPane.rowIndex="1">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+				<TextField fx:id="userId" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="4" GridPane.rowIndex="1" />
+				<Label text="用户性别" GridPane.rowIndex="2">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+				<TextField fx:id="userSex" prefHeight="36.0" prefWidth="177.0"
+					GridPane.columnIndex="1" GridPane.rowIndex="2" />
+				<Label text="电话号码" GridPane.columnIndex="3" GridPane.rowIndex="2">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+				<TextField fx:id="phoneNumber" prefHeight="36.0"
+					prefWidth="177.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+				<Label text="用户类别" GridPane.columnIndex="3">
+					<font>
+						<Font size="22.0" />
+					</font>
+				</Label>
+			</children>
+			<columnConstraints>
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0"
+					minWidth="10.0" prefWidth="98.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="165.0"
+					minWidth="10.0" prefWidth="126.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="47.0"
+					minWidth="10.0" prefWidth="40.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="101.0"
+					minWidth="10.0" prefWidth="97.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="171.0"
+					minWidth="10.0" prefWidth="154.0" />
+			</columnConstraints>
+			<rowConstraints>
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+				<RowConstraints minHeight="10.0" prefHeight="30.0"
+					vgrow="SOMETIMES" />
+			</rowConstraints>
+		</GridPane>
+		<HBox layoutX="181.0" layoutY="320.0" spacing="40.0">
+			<children>
+				<Button fx:id="affirmBtn" layoutX="477.0" layoutY="346.0"
+					mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0" text="确认"
+					textFill="#1e1e1e" />
+			</children>
+		</HBox>
+		<Button fx:id="cancelBtn" layoutX="318.0" layoutY="320.0"
+			mnemonicParsing="false" prefHeight="36.0" prefWidth="100.0"
+			stylesheets="@LB.css" text="取消" textFill="#222121" />
+	</children>
+</AnchorPane>

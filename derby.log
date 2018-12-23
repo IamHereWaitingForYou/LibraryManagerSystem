@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Sun Dec 23 15:11:16 CST 2018:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.11.1.2 - (1629631): instance a816c00e-0167-d9e7-55ad-000005d6a950 
+on database directory D:\绿色eclipse来自QQ\eclipsework\LibraryManagerSystem3.0\Derby_LibraryManageSystem with class loader sun.misc.Launcher$AppClassLoader@6d06d69c 
+Loaded from file:/D:/%e7%bb%bf%e8%89%b2eclipse%e6%9d%a5%e8%87%aaQQ/eclipsework/LibraryManagerSystem3.0/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_162-b12
+user.dir=D:\绿色eclipse来自QQ\eclipsework\LibraryManagerSystem3.0
+os.name=Windows 10
+os.arch=amd64
+os.version=10.0
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
